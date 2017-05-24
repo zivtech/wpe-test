@@ -1,0 +1,14 @@
+assets:
+  - wpe.sql.gz
+  steps:
+  - name: Site setup
+    plugin: WordPressApp
+    database: wpe.sql.gz
+    databaseName: wordpress
+    databaseGzipped: true
+    subDirectory: code
+    devDomain: zivtech.wpengine.com
+    devHome: zivtech.wpengine.com
+  - name: Flush the cache
+    plugin: WordPressApp
+    flushCaches: true
