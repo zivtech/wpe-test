@@ -1,14 +1,11 @@
 assets:
   - wpe.sql
-  steps:
+steps:
   - name: Setting up WP on Probo
     plugin: WordPressApp
-    database: wpe.sql
-    databaseName: wp_zivtech
-    databaseGzipped: false
-    subDirectory: code
     devDomain: 'http://zivtech.wpengine.com'
     devHome: 'http://zivtech.wpengine.com'
-  - name: Flush the cache
-    plugin: WordPressApp
-    flushCaches: true
+    database: 'wpe.sql'
+    databaseName: 'wp_zivtech'
+    databaseGzipped: false
+    subDirectory: 'code'
