@@ -1,10 +1,10 @@
 assets:
-  - wpe.sql.gz
+  - wpe.sql
   steps:
   - name: Site setup
     plugin: WordPressApp
-    database: wpe.sql.gz
-    databaseName: wordpress
+    database: wpe.sql
+    databaseName: wp_zivtech
     databaseGzipped: true
     subDirectory: code
     devDomain: zivtech.wpengine.com
