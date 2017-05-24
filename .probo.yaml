@@ -8,4 +8,4 @@ steps:
     database: 'wpe.sql'
     databaseName: 'wp_zivtech'
     databaseGzipped: false
-    subDirectory: 'code'
+    subDirectory: 'docroot'
