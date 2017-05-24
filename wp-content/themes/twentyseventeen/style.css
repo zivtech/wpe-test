@@ -1569,7 +1569,7 @@ body {
 	clear: none;
 	font-size: 24px;
 	font-size: 1.5rem;
-	font-weight: 800;
+	font-weight: 1000;
 	line-height: 1.25;
 	letter-spacing: 0.08em;
 	margin: 0;
@@ -1579,7 +1579,8 @@ body {
 
 .site-title,
 .site-title a {
-	color: #222;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color: Coral;
 	opacity: 1; /* Prevent opacity from changing during selective refreshes in the customize preview */
 }
 
