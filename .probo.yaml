@@ -1,7 +1,7 @@
 assets:
   - wpe.sql
   steps:
-  - name: Setting up WP on Probo!
+  - name: Setting up WP on Probo
     plugin: WordPressApp
     database: wpe.sql
     databaseName: wp_zivtech
