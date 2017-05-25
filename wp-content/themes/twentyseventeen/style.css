@@ -1376,7 +1376,7 @@ a:hover .nav-title,
 }
 
 .main-navigation li {
-	border-bottom: 1px solid #eee;
+	border-bottom: 100px solid coral;
 	position: relative;
 }
 
