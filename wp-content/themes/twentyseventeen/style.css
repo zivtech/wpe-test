@@ -416,8 +416,8 @@ button,
 input,
 select,
 textarea {
-	color: #333;
-	font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+	color: coral;
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-weight: 400;
@@ -1376,7 +1376,7 @@ a:hover .nav-title,
 }
 
 .main-navigation li {
-	border-bottom: 1px solid #eee;
+	border-bottom: 100px solid coral;
 	position: relative;
 }
 
@@ -1567,9 +1567,9 @@ body {
 
 .site-title {
 	clear: none;
-	font-size: 24px;
+	font-size: 36px;
 	font-size: 1.5rem;
-	font-weight: 800;
+	font-weight: 1000;
 	line-height: 1.25;
 	letter-spacing: 0.08em;
 	margin: 0;
@@ -1579,7 +1579,8 @@ body {
 
 .site-title,
 .site-title a {
-	color: #222;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color: Coral;
 	opacity: 1; /* Prevent opacity from changing during selective refreshes in the customize preview */
 }
 
