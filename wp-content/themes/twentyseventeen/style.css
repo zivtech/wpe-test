@@ -416,7 +416,7 @@ button,
 input,
 select,
 textarea {
-	color: coral;
+	color: #333;
 	font-family: "Comic Sans MS", cursive, sans-serif;
 	font-size: 15px;
 	font-size: 0.9375rem;
