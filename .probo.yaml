@@ -1,17 +1,12 @@
 image: proboci/ubuntu-14.04-lamp:7.0-beta
 assets:
-  - wpe.sql
+  - wp-engine-482.sql.gz
 steps:
   - name: Setting up WP on Probo
     plugin: WordPressApp
     devDomain: 'http://zivtech.wpengine.com'
     devHome: 'http://zivtech.wpengine.com'
-    database: 'wpe.sql'
+    database: 'wp-engine-482.sql.gz'
     databaseName: 'wp_zivtech'
-    databaseGzipped: false
+    databaseGzipped: true
     subDirectory: 'docroot'
-  - name: 'Run visual comparision to test via backtrac.io'
-    plugin: Script
-    script: |
-        curl $BUILD_DOMAIN
-        curl --header 'x-api-key: 0f8ce8c48323a0f933af9a277877e6df' --request POST 'https://backtrac.io/api/project/59156/compare_custom' --data '{"url1":"https:\/\/zivtech.wpengine.com","sn1_name":"WP Live Site","url2":"'"$BUILD_DOMAIN"'","sn2_name":"WP Engine Probo Build","diff_name":"Live vs Probo"}'
