@@ -1,12 +1,24 @@
 image: proboci/ubuntu-14.04-lamp:7.0-beta
 assets:
-  - wpe.sql
+  - wp_zivtech482.sql.gz
 steps:
+  - name: Check wp-cli version.
+    plugin: Script
+    script:
+      - wp --info --allow-root
+  - name: Update wp-cli.
+    plugin: Script
+    script:
+      - wp cli update --allow-root --yes
+  - name: Check wp-cli version again.
+    plugin: Script
+    script:
+      - wp --info --allow-root
   - name: Setting up WP on Probo
     plugin: WordPressApp
     devDomain: 'http://zivtech.wpengine.com'
     devHome: 'http://zivtech.wpengine.com'
-    database: 'wpe.sql'
+    database: 'wp_zivtech482.sql.gz'
     databaseName: 'wp_zivtech'
-    databaseGzipped: false
+    databaseGzipped: true
     subDirectory: 'docroot'
