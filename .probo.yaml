@@ -6,6 +6,14 @@ steps:
     plugin: Script
     script:
       - wp --info --allow-root
+  - name: Update wp-cli.
+    plugin: Script
+    script:
+      - wp cli update --allow-root --yes
+  - name: Check wp-cli version again.
+    plugin: Script
+    script:
+      - wp --info --allow-root
   - name: Setting up WP on Probo
     plugin: WordPressApp
     devDomain: 'http://zivtech.wpengine.com'
