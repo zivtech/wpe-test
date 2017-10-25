@@ -10,8 +10,3 @@ steps:
     databaseName: 'wp_zivtech'
     databaseGzipped: false
     subDirectory: 'docroot'
-  - name: 'Run visual comparision to test via backtrac.io'
-    plugin: Script
-    script: |
-        curl $BUILD_DOMAIN
-        curl --header 'x-api-key: 0f8ce8c48323a0f933af9a277877e6df' --request POST 'https://backtrac.io/api/project/59156/compare_custom' --data '{"url1":"https:\/\/zivtech.wpengine.com","sn1_name":"WP Live Site","url2":"'"$BUILD_DOMAIN"'","sn2_name":"WP Engine Probo Build","diff_name":"Live vs Probo"}'
