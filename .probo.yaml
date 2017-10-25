@@ -1,12 +1,12 @@
 image: proboci/ubuntu-14.04-lamp:7.0-beta
 assets:
-  - wpe.sql
+  - wp_zivtech.sql.gz
 steps:
   - name: Setting up WP on Probo
     plugin: WordPressApp
     devDomain: 'http://zivtech.wpengine.com'
     devHome: 'http://zivtech.wpengine.com'
-    database: 'wpe.sql'
+    database: 'wp_zivtech.sql.gz'
     databaseName: 'wp_zivtech'
-    databaseGzipped: false
+    databaseGzipped: true
     subDirectory: 'docroot'
