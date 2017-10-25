@@ -14,10 +14,11 @@ steps:
     databaseName: 'wp_zivtech'
     databaseGzipped: true
     subDirectory: 'docroot'
-  - name: Import wp-cfm config.
+  - name: Import wp-cfm configs.
     plugin: Script
     script:
       - wp config pull active_plugins --allow-root
+      - wp config pull wordpress_seo --allow-root
   - name: Clear WP cache.
     plugin: Script
     script:
