@@ -23,6 +23,6 @@ steps:
       - wp config pull active_plugins --allow-root
       - wp config pull wordpress_seo --allow-root
   - name: Clear Wordpress cache.
-      plugin: Script
-      script:
-        - wp cache flush --allow-root
+    plugin: Script
+    script:
+      - wp cache flush --allow-root
