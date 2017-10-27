@@ -17,3 +17,7 @@ steps:
     plugin: Script
     script:
       - wp user create admin dev@probo.ci --role=administrator --allow-root
+  - name: Import wp-cfm configs.
+    plugin: Script
+    script:
+      - wp config pull active_plugins --allow-root
