@@ -21,3 +21,4 @@ steps:
     plugin: Script
     script:
       - wp config pull active_plugins --allow-root
+      - wp config pull wordpress_seo --allow-root
