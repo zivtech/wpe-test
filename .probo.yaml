@@ -13,6 +13,10 @@ steps:
     database: 'wp-engine-482.sql.gz'
     databaseName: 'wp_zivtech'
     databaseGzipped: true
+  - name: Change perms.
+    plugin: Script
+    script:
+      - chmod -R 777 /var/www/html/wp-content/plugins
   - name: Import wp-cfm configs.
     plugin: Script
     script:
