@@ -1,0 +1,4 @@
+{
+    "active_plugins": "a:4:{i:0;s:19:\"akismet\/akismet.php\";i:1;s:19:\"jetpack\/jetpack.php\";i:2;s:17:\"wp-cfm\/wp-cfm.php\";i:3;s:33:\"wp-github-sync\/wp-github-sync.php\";}",
+    ".label": "Active Plugins"
+}
