@@ -23,3 +23,7 @@ steps:
     plugin: Script
     script:
       - wp cache flush --allow-root
+  - name: Create admin user.
+    plugin: Script
+    script:
+      - wp user create admin dev@probo.ci --role=administrator --allow-root
