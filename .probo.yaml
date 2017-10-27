@@ -13,7 +13,6 @@ steps:
     database: 'wp-engine-482.sql.gz'
     databaseName: 'wp_zivtech'
     databaseGzipped: true
-    subDirectory: 'docroot'
   - name: Import wp-cfm configs.
     plugin: Script
     script:
