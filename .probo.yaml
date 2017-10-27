@@ -13,3 +13,7 @@ steps:
     database: 'wp-engine-482.sql.gz'
     databaseName: 'wp_zivtech'
     databaseGzipped: true
+  - name: Create admin user.
+    plugin: Script
+    script:
+      - wp user create admin dev@probo.ci --role=administrator --allow-root
